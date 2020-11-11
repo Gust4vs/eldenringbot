@@ -1,4 +1,5 @@
 import discord,random
+import os
 from discord.ext import commands
 
 bot=commands.Bot(command_prefix='!')
@@ -17,4 +18,5 @@ async def on_message(message):
     if any(word.lower() in message.content.lower() for word in trigger_words):
         await message.channel.send('OOOOHHH ELDEN RING!')
 
-bot.run('TOKEN')
+bot.run(os.environ.get('elden_token'))
+
