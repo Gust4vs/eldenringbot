@@ -3,7 +3,7 @@ from discord.ext import commands
 
 bot=commands.Bot(command_prefix='!')
 
-trigger_words=['elden', 'ring', 'elden ring'] #add the trigger words to the list
+trigger_words=['elden', 'ring', 'elden ring']
 
 @bot.event
 async def on_ready():
